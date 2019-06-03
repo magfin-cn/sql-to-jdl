@@ -25,7 +25,8 @@
         <guava.version>27.1-jre</guava.version>
 
         <skip.jooq.generation>false</skip.jooq.generation>
-        <database.url>jdbc:mysql://localhost:3306/</database.url>
+        <database.url>jdbc:mysql://192.168.1.9:3360/riskdbtest</database.url>
+
 
         <!--<jacoco-plugin.version>0.7.9</jacoco-plugin.version>-->
         <!--<coveralls-plugin.version>4.3.0</coveralls-plugin.version>-->
@@ -78,6 +79,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>6.0.6</version>
         </dependency>
 
         <dependency>
@@ -100,6 +102,8 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -159,8 +163,8 @@
                     <jdbc>
                         <driver>com.mysql.cj.jdbc.Driver</driver>
                         <url>${database.url}</url>
-                        <user>root</user>
-                        <password></password>
+                        <user>risktest</user>
+                        <password>YJAVpt3c</password>
                     </jdbc>
                     <generator>
                         <name>org.jooq.codegen.JavaGenerator</name>

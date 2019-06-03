@@ -117,11 +117,11 @@ public class SqlJdlTypeService {
     }
 
     protected List<String> jdlString() {
-        return Lists.newArrayList("varchar", "char", "text");
+        return Lists.newArrayList("varchar", "char", "text", "json");
     }
 
     protected List<String> jdlTextBlob() {
-        return Lists.newArrayList("longtext");
+        return Lists.newArrayList("longtext", "mediumtext");
     }
 
     protected List<String> jdlInteger() {
